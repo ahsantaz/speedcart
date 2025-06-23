@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function HorizantalLine() {
+export default function HorizantalLine({color}) {
   return (
     <>
-        <hr className='border-1 border-[#5D5C5C] w-[100%]'></hr>
+        <hr className={`border-1 ${color} w-[100%]`}></hr>
     </>
   )
 }

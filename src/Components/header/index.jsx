@@ -5,17 +5,29 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   const [rotated, setRotated] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+
+  const toggleDropdown = () => {
+    setRotated(!rotated);
+    setDropdownVisible(!dropdownVisible);
+  };
+    const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
 
   return (
     <>
-      <div className='bg-white p-[16px] rounded-[50px] max-w-[850px] mx-auto flex justify-between items-center mb-7 z-40'>
-
+      <div className='bg-white p-[12px] md:p-[16px] rounded-[50px] max-w-[850px] lg:w-[850px] w-[calc(100%-40px)] mx-auto flex justify-between items-center mb-7 z-40 relative'>
         <div className='cursor-pointer'>
           <img src="/images/header-logo.svg" alt="logo" />
+         
         </div>
-
-        <div>
-          <ul className="flex space-x-6 items-center">
+ <img className='lg:hidden' src="/images/menu-lines.svg" onClick={toggleMobileMenu} alt="" />
+         <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-4 w-[calc(100%-50px)] bg-white rounded-xl shadow-xl p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[50px]`}> 
+          <ul className="lg:flex lg:space-x-6 items-start lg:items-center space-y-3 lg:space-y-0">
             <li>
               <NavLink
                 to="/"
@@ -27,8 +39,8 @@ export default function Header() {
               </NavLink>
             </li>
 
-            <li onClick={() => setRotated(!rotated)} className="group cursor-pointer">
-              <span className="cursor-pointer text-gray-500 group-hover:text-[#F05A29] flex flex-row items-center gap-1">
+            <li onClick={toggleDropdown} className="relative group cursor-pointer">
+               <span className={`cursor-pointer ${dropdownVisible ? 'text-[#F05A29]' : 'text-gray-500'}  group-hover:text-[#F05A29] flex flex-row items-center gap-1`}>
                 Feature
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +52,41 @@ export default function Header() {
                   <path d="m280-400 200-200 200 200H280Z" />
                 </svg>
               </span>
+
+              {dropdownVisible && (
+                <div className="absolute top-full left-0 mt-2 bg-white w-[350px]  rounded-xl p-4 z-50 shadow-[0px_4px_20px_0px_rgba(65,65,65,0.15)] border-1 border-[#E8E8E8]">
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                     <img className='mt-1' src="/images/dropdown1.svg" alt="" />
+                      <div>
+                        <p className="font-semibold text-black">Cart Editor</p>
+                        <p className="text-gray-500 text-sm leading-snug">Customize and control your customers' cart effortlessly.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                     <img className='mt-1' src="/images/dropdown2.svg" alt="" />
+                      <div>
+                        <p className="font-semibold text-black">Sticky Cart</p>
+                        <p className="text-gray-500 text-sm leading-snug">Keep carts visible and boost conversions seamlessly.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                     <img className='mt-1' src="/images/dropdown3.svg" alt="" />
+                      <div>
+                        <p className="font-semibold text-black">Abandoned Cart Recovery</p>
+                        <p className="text-gray-500 text-sm leading-snug">Recover lost sales with smart cart reminders.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                     <img className='mt-1' src="/images/dropdown4.svg" alt="" />
+                      <div>
+                        <p className="font-semibold text-black">Cart Templates</p>
+                        <p className="text-gray-500 text-sm leading-snug">Recover lost sales with smart cart reminders.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </li>
 
             <li>
@@ -86,13 +133,13 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-        </div>
+        
 
-        <div className='flex gap-1'>
+        <div className='flex gap-1 mt-4 lg:mt-0'>
           <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25" />
           <OrangeHover text="Try Free" width="w-20" />
         </div>
-
+      </div>
       </div>
     </>
   );

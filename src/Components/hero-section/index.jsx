@@ -4,43 +4,45 @@ import HorizantalLine from '../lines/horizantal-line'
 import OrangeHover from '../buttons/OrangeHover'
 import HoverButton from '../buttons/HoverButton'
 
-export default function Hero_section() {
+export default function Hero_section({part1, part2, part3, part4, part5, description, image}) {
   return (
     <div className="relative">
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 border-l border-r border-[#5D5C5C] w-[1200px] h-full z-10 pointer-events-none"></div>
+      <div className="absolute left-1/2 top-0 -translate-x-1/2  border-r-[2px] border-l-[2px] border-[#5D5C5C] max-w-[1200px] h-full z-10 pointer-events-none w-[calc(100%-30px)] lg:w-[calc(100%-40px)]"></div>
 
-      <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-14">
+      <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-8 md:pb-14">
         <Header />
-        <HorizantalLine />
-        <div className="max-w-[1024px] mx-auto my-14 z-20 relative">
+        <HorizantalLine color="border-[#5D5C5C]" />
+
+        <div className="max-w-[1024px] mx-auto my-8 md:my-14 z-20 relative px-6 md:px-10">
           <div className="text-center">
-            <span className="inline-flex items-center justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400]">
-              <img src="/images/subtitle.svg" alt="" />
+            <span className="inline-flex items-center justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400] text-sm sm:text-base">
+              <img src="/images/subtitle.svg" alt="" className="w-4 sm:w-auto" />
               <span>Smarter Carts. Higher Conversions.</span>
             </span>
 
             <div className="my-5">
-              <p className="font-[700] text-[64px] text-white leading-[120%]">
-                <span className="text-sec-orange">Upgrade</span> Your Cart <br />
-                Boost <span className="text-sec-orange">Sales</span> Today
+              <p className="font-[700] text-[32px] md:text-[48px] lg:text-[64px] text-white leading-[120%]">
+                <span className="text-sec-orange">{part1}</span> {part2} <br />
+                {part3} <span className="text-sec-orange">{part4}</span> {part5}
               </p>
 
-              <p className="text-[#C9C9C9] leading-[150%] font-[400] mt-6 max-w-150 mx-auto">
-                Convert and recover your sales with Speed Cart's advanced cart tools, upsells, sticky carts, and recovery emails.
+              <p className="text-[#C9C9C9] leading-[150%] font-[400] mt-6 max-w-150 mx-auto text-sm sm:text-base">
+               {description}
               </p>
 
-              <div className="flex gap-2 justify-center my-10">
+              <div className="flex flex-row gap-2 justify-center my-6 md:my-10">
                 <OrangeHover text="Get Started" width="w-27" />
                 <HoverButton text="View Demo" color="text-white" width="w-25" />
               </div>
             </div>
 
-            <div className="w-[100%] h-[500px] bg-gray-200 rounded-2xl my-10">
-              image container
-            </div>
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] bg-gray-200 rounded-2xl my-6 md:my-10">
+{image}            </div>
           </div>
         </div>
-        <HorizantalLine />
+        <HorizantalLine color="border-[#5D5C5C]" />
+
+      
       </div>
     </div>
   )
