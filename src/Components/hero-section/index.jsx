@@ -9,7 +9,7 @@ export default function Hero_section() {
     <div className="relative">
       <div className="absolute left-1/2 top-0 -translate-x-1/2 border-l border-r border-[#5D5C5C] w-[1200px] h-full z-10 pointer-events-none"></div>
 
-      <div className="bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-14">
+      <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-14">
         <Header />
         <HorizantalLine />
 
