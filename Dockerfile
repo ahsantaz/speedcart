@@ -1,13 +1,24 @@
-# Use Node.js base image
-FROM node:22
-# Set working directory
+# Step 1: Build Vite app
+FROM node:18 AS builder
+
 WORKDIR /app
-# Copy package.json and install dependencies
+
 COPY package*.json ./
 RUN npm install
-# Copy the rest of the source code
+
 COPY . .
-# Expose the dev port (default: 5173 for Vite)
-EXPOSE 5173
-# Run the Vite dev server
-CMD ["npm", "run", "dev", "--", "--host"]
+RUN npm run build
+
+# Step 2: Serve with NGINX
+FROM nginx:alpine
+
+# Remove default nginx page
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy built files
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
