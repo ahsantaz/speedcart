@@ -17,7 +17,7 @@ export default function FeatureCard({ image, heading, description, background, l
       onMouseLeave={() => setShowArrow(false)}
     >
       <div
-        className={`absolute top-4 right-4 transition-all duration-500 ${
+        className={`absolute top-5 right-5 transition-all duration-500 ${
           showArrow ? 'opacity-100 ' : 'opacity-0 '
         }`}
       >

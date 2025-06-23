@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function HeadingSection({heading1, heading2, description}) {
+export default function HeadingSection({heading1, heading2, description, align}) {
   return (
-    <div className=' text-center mx-auto max-w-[600px] mb-7 px-2'>
+    <div className={`${align}  max-w-[600px] mb-7 px-2`}>
         <h1 className='md:text-[48px] text-[28px] leading-[120%] font-[600] text-black mb-4 capitalize'>
         {heading1} <span className='text-sec-orange'>{heading2}</span>
         </h1>

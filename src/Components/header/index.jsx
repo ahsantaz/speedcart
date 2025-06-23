@@ -26,8 +26,8 @@ export default function Header() {
          
         </div>
  <img className='lg:hidden' src="/images/menu-lines.svg" onClick={toggleMobileMenu} alt="" />
-         <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-4 w-[calc(100%-50px)] bg-white rounded-xl shadow-xl p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[50px]`}> 
-          <ul className="lg:flex lg:space-x-6 items-start lg:items-center space-y-3 lg:space-y-0">
+         <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-4 w-[calc(100%-50px)] bg-white rounded-xl shadow-xl p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[50px] lg:gap-7`}> 
+          <ul className="lg:flex lg:space-x-6 items-start lg:items-center space-y-3 lg:space-y-0 ">
             <li>
               <NavLink
                 to="/"
