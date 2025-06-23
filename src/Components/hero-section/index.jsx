@@ -12,7 +12,6 @@ export default function Hero_section() {
       <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-14">
         <Header />
         <HorizantalLine />
-
         <div className="max-w-[1024px] mx-auto my-14 z-20 relative">
           <div className="text-center">
             <span className="inline-flex items-center justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400]">
@@ -41,7 +40,6 @@ export default function Hero_section() {
             </div>
           </div>
         </div>
-
         <HorizantalLine />
       </div>
     </div>
