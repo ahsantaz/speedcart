@@ -30,10 +30,10 @@ export default function CustomCarousel() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4">
+    <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={26}
         onSwiper={onSwiperInit}
         onSlideChange={handleSlideChange}
          breakpoints={{
@@ -43,16 +43,16 @@ export default function CustomCarousel() {
     640: {
       slidesPerView: 2,
     },
-    1024: {
+    1200: {
       slidesPerView: 3,
     },
   }}
       >
          {cards.map((card, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="bg-[#F6F6F6]  rounded-xl p-6">
-            <p className='text-gray-500 font-[400]'>{card.text}</p>
-            <h4 className='text-gray-900 font-[600]'>{card.client}</h4>
+          <SwiperSlide key={idx} className='h-full'>
+            <div className="bg-[#F6F6F6] rounded-xl lg:p-[24px] p-[18px] ">
+            <p className='text-gray-500 font-[400] lg:pb-6 pb-[18px]'>{card.text}</p>
+            <h4 className='text-gray-900 font-[600] pb-[4px]'>{card.client}</h4>
             <p className='text-gray-500 text-[14px] font-[400]'>{card.work}</p>
             </div>
           </SwiperSlide>
@@ -61,7 +61,7 @@ export default function CustomCarousel() {
       </Swiper>
 
       {/* Custom Navigation Arrows */}
-      <div className="flex justify-center mt-6 gap-4 ">
+      <div className="flex justify-center mt-[26px] gap-4 ">
         {/* Prev Arrow */}
         <button
           onClick={() => swiperRef.current?.slidePrev()}
@@ -106,6 +106,6 @@ export default function CustomCarousel() {
           </svg>
         </button>
       </div>
-    </div>
+    </>
   );
 }

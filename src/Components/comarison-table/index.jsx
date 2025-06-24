@@ -22,18 +22,18 @@ const data = {
 
 const ComparisonTable = () => {
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className="max-w-[1286px] mx-auto lg:px-[26px] px-[18px] py-6 lg:py-[32px]">
       <div className="overflow-x-auto">
-        <table className="min-w-[700px] md:min-w-full w-full text-left border border-gray-200 shadow-md rounded-lg overflow-hidden">
+        <table className="min-w-[700px] md:min-w-full w-full text-left border border-gray-200 rounded-lg overflow-hidden">
           <thead className="">
             <tr>
-              <th className="px-3 py-2 md:px-4 md:py-3 font-semibold text-gray-700 text-sm md:text-base">
+              <th className=" py-2  md:py-3 font-semibold text-gray-700 text-sm md:text-base">
                 {" "}
               </th>
               {Object.keys(data).map((brand) => (
                 <th
                   key={brand}
-                  className="px-3 py-2 md:px-4 md:py-3 font-semibold text-center text-sm md:text-base"
+                  className=" py-2  md:py-3 font-semibold text-center text-sm md:text-base"
                 >
                   {brand === "Speed Cart" ? (
                     <img
@@ -55,7 +55,7 @@ const ComparisonTable = () => {
                 key={feature}
                 className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:to-gray-200"
               >
-                <td className="px-3 py-3 md:px-4 md:py-4 text-gray-700 text-sm md:text-[20px] font-[400] whitespace-nowrap">
+                <td className=" py-3  md:py-4 text-gray-700 text-sm md:text-[20px] font-[400] whitespace-nowrap">
                   {feature}
                 </td>
                 {Object.entries(data).map(([brand, brandData], i) => (

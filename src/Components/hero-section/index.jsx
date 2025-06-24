@@ -7,7 +7,7 @@ import HoverButton from '../buttons/HoverButton'
 export default function Hero_section({part1, part2, part3, part4, part5, description, image}) {
   return (
     <div className="relative">
-      <div className="absolute left-1/2 top-0 -translate-x-1/2  border-r-[2px] border-l-[2px] border-[#5D5C5C] max-w-[1200px] h-full z-10 pointer-events-none w-[calc(100%-30px)] lg:w-[calc(100%-40px)]"></div>
+      <div className="absolute left-1/2 top-0 -translate-x-1/2  border-r-[2px] border-l-[2px] border-[#5D5C5C] max-w-[1286px] h-full z-10 pointer-events-none w-[calc(100%-30px)] lg:w-[calc(100%-40px)]"></div>
 
       <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full pt-7 pb-8 md:pb-14">
         <Header />

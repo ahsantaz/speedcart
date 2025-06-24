@@ -1,0 +1,34 @@
+.rotating-shadow-btn {
+  position: relative;
+  animation: rotateShadow 3s infinite linear;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Start with top shadow */
+@keyframes rotateShadow {
+  0% {
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.7); /* Top */
+  
+  }
+  25% {
+    box-shadow: -3px 0 3px rgba(255, 255, 255, 1); /* Left */
+   
+  }
+  50% {
+    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.7); /* Bottom */
+        
+
+  }
+  75% {
+    box-shadow: 3px 0 3px rgba(255, 255, 255, 1); /* Right */
+      
+
+  }
+  100% {
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.7); /* Back to Top */
+       
+
+  }
+}
+
+
