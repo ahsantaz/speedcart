@@ -86,6 +86,7 @@ export default function Footer() {
      
 </div>
 </div>
+<p className='text-gray-200 font-[400] lg:p-[26px] p-[16px] text-center '>© 2025 Product by Daisy Diffusion</p>
        </div>
     </div>
   )

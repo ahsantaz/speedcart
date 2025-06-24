@@ -33,7 +33,7 @@ const blogQuestions = [
   return (
     <>
    
-<Hero_section image={''} heading="" description=" Convert and recover your sales with Speed Cart's advanced cart tools, upsells, sticky carts, and recovery emails." part1="Upgrade" part2="Your Cart" part3="Boost" part4="Sales" part5="Today"/>
+<Hero_section image="/images/home-banner.svg" heading="" description=" Convert and recover your sales with Speed Cart's advanced cart tools, upsells, sticky carts, and recovery emails." part1="Upgrade" part2="Your Cart" part3="Boost" part4="Sales" part5="Today"/>
 
 <ContentWrapper>
   <HeadingSection heading1="Our core" heading2="feature" description="Simplify cart management, boost sales, and recover lost revenue with our easy, powerful features." align="text-center mx-auto" />

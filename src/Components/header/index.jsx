@@ -20,8 +20,10 @@ export default function Header() {
 
   return (
     <>
-      <div className='bg-white p-[12px] md:p-[16px] rounded-[50px] max-w-[850px] lg:w-[850px] w-[calc(100%-40px)] mx-auto flex justify-between items-center mb-7 z-40 relative'>
-        <div className='cursor-pointer'>
+      <div className="fixed md:top-7 top-4 left-1/2 transform -translate-x-1/2 z-40 
+  bg-white p-[12px] md:p-[16px] rounded-[50px] shadow-lg 
+  w-[calc(100%-40px)] max-w-[850px] flex justify-between items-center">
+        <div className='cursor-pointer '>
           <img src="/images/header-logo.svg" alt="logo" />
          
         </div>
