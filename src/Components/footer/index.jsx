@@ -25,7 +25,7 @@ export default function Footer() {
              Find quick answers to common questions and learn how Speed Cart helps you boost conversions, simplify checkout, and recover more sales.
               </p>   
               </div>  
-<ShinyOrangeButton />
+<ShinyOrangeButton text="Try For Free"/>
             </div>
             <HorizantalLine color="border-[#5D5C5C]"/>
 <div className='grid lg:grid-cols-3 grid-col-1'>

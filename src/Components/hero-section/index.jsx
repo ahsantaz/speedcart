@@ -3,6 +3,7 @@ import Header from '../header'
 import HorizantalLine from '../lines/horizantal-line'
 import OrangeHover from '../buttons/OrangeHover'
 import HoverButton from '../buttons/HoverButton'
+import ShinyOrangeButton from '../buttons/ShinyOrangeButton'
 
 export default function Hero_section({part1, part2, part3, part4, part5, description, image}) {
   return (
@@ -31,7 +32,7 @@ export default function Hero_section({part1, part2, part3, part4, part5, descrip
               </p>
 
               <div className="flex flex-row gap-2 justify-center my-6 md:my-10">
-                <OrangeHover text="Get Started" width="w-27" />
+<ShinyOrangeButton text="Get started"/>
                 <HoverButton text="View Demo" color="text-white" width="w-25" />
               </div>
             </div>
