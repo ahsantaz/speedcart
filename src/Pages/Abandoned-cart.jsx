@@ -59,7 +59,7 @@ const blogQuestions = [
     <ContentWrapper>
         <div className='py-4'></div>
 
-      <HeadingSection heading1="Recover Lost Sales with" heading2=" Smart Abandoned Cart Emails" description="Implement Automation to rearrange shoppers who leave items in their cart with timed, personalized recovery emails." align="text-center mx-auto" />
+      <HeadingSection heading1="Recover Lost Sales with" heading2=" Smart Abandoned Cart Emails" description="Implement Automation to rearrange shoppers who leave items in their cart with timed, personalized recovery emails." align="text-center mx-auto max-w-[780px]" />
 
            {cardData.map((card, index) => (
         <React.Fragment key={index}>
@@ -84,7 +84,7 @@ const blogQuestions = [
       <ContentWrapper>
 
         {/* questions section */}
-      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left" />
+      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left max-w-[550px]" />
       
         <GrayLine/>
             <FaqAccordion questions={blogQuestions} />

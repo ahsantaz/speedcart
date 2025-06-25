@@ -12,7 +12,7 @@ export default function AnimationCard({ heading, description, image }) {
         <div className='flex justify-center items-center'>
             <img src={image} className='w-100' alt="" />
         </div>
-        <h2 className="text-[20px] md:text-[24px] pt-3 text-gray-900 group-hover:text-white transition-all duration-700">
+        <h2 className="text-[20px] font-[600] md:text-[24px] pt-3 text-gray-900 group-hover:text-white transition-all duration-700">
           {heading}
         </h2>
         <p className="text-[14px] md:text-[16px] text-gray-500 pt-2 group-hover:text-white transition-all duration-700">

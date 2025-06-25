@@ -30,7 +30,7 @@ const blogQuestions = [
     <ContentWrapper>
               <div className='py-4'></div>
 
-      <HeadingSection heading1="Sticky Cart Features" heading2="That Drive Faster Checkouts " description="Reduce friction and speed up conversions by keeping the cart always within reach on every page." align="text-center mx-auto" />
+      <HeadingSection heading1="Sticky Cart Features That" heading2=" Drive Faster Checkouts " description="Reduce friction and speed up conversions by keeping the cart always within reach on every page." align="text-center mx-auto max-w-[800px]" />
 
 <GrayLine />
 
@@ -48,7 +48,7 @@ const blogQuestions = [
 
       <ContentWrapper>
         {/* questions section */}
-      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left" />
+      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left max-w-[550px]" />
       
         <GrayLine/>
             <FaqAccordion questions={blogQuestions} />

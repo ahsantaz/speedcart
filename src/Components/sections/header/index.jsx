@@ -88,7 +88,7 @@ export default function Header() {
                       <Link to={path}>
                         <div className="flex items-center gap-2">
                           <img className="w-4 h-4 lg:w-[22px] lg:h-[22px]" src={icon} alt="" />
-                          <p className="font-semibold text-black text-[12px] lg:text-[16px]">{title}</p>
+                          <p className="font-semibold text-black text-[12px] lg:text-[16px] hover:text-sec-orange">{title}</p>
                         </div>
                         <p className="text-[#3F3F3F] text-[12px] lg:text-sm font-[400] leading-snug pt-1">{desc}</p>
                       </Link>

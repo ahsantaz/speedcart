@@ -100,7 +100,7 @@ const blogQuestions = [
     <ContentWrapper>
         <div className='py-4'></div>
 
-      <HeadingSection heading1="Cart Editor Features " heading2="That Boost Sales" description="A fully flexible cart editor with everything you need to optimize conversions and create a seamless customer experience." align="text-center mx-auto" />
+      <HeadingSection heading1="Cart Editor Features " heading2="That Boost Sales" description="A fully flexible cart editor with everything you need to optimize conversions and create a seamless customer experience." align="text-center mx-auto max-w-[700px]" />
 
       {cardData.map((card, index) => (
   <React.Fragment key={index}>
@@ -133,7 +133,7 @@ const blogQuestions = [
         {/* questions section */}
       <ContentWrapper>
       
-      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left" />
+      <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left max-w-[550px]" />
       
         <GrayLine/>
             <FaqAccordion questions={blogQuestions} />

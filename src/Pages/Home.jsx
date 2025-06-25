@@ -37,7 +37,7 @@ const blogQuestions = [
 
 <ContentWrapper>
   <div className='py-4'></div>
-  <HeadingSection heading1="Our core" heading2="feature" description="Simplify cart management, boost sales, and recover lost revenue with our easy, powerful features." align="text-center mx-auto" />
+  <HeadingSection heading1="Our core" heading2="feature" description="Simplify cart management, boost sales, and recover lost revenue with our easy, powerful features." align="text-center mx-auto max-w-[700px]" />
 
    <div className="grid grid-cols-1 md:grid-cols-2">
 
@@ -64,7 +64,7 @@ const blogQuestions = [
 <GrayLine />
 <ContentWrapper>
  
-<HeadingFlex heading1="Speed cart is built to "  heading2="convert to a conversion." description="Powerful, scalable, and designed to convert — trusted by stores worldwide to boost sales and streamline checkout." align="text-left" />
+<HeadingFlex heading1="Speed cart is built to "  heading2="convert to a conversion." description="Powerful, scalable, and designed to convert — trusted by stores worldwide to boost sales and streamline checkout." align="text-left max-w-[620px]" />
  
 
  
@@ -109,7 +109,7 @@ const blogQuestions = [
 <GrayLine />
 <ContentWrapper>
   <div className='flex justify-between items-center gap-5'>
-<HeadingSection heading1="What Makes Us Different?" heading2=" See for Yourself " description="Speed Cart combines powerful customization, upsells, and recovery tools in one lightweight, high-performance Shopify app" align="text-left" />
+<HeadingSection heading1="What Makes Us Different?" heading2=" See for Yourself " description="Speed Cart combines powerful customization, upsells, and recovery tools in one lightweight, high-performance Shopify app" align="text-left max-w-[700px]" />
 
   </div>
 <GrayLine />
@@ -119,7 +119,7 @@ const blogQuestions = [
 <EmptyBox></EmptyBox>
 <GrayLine />
 <ContentWrapper>
-  <HeadingSection heading1="Merchants " heading2="Who Trust Us" description="Shopify merchants love Speed Cart because it boosts conversions, recovers lost sales, and speeds up checkouts" align="text-center mx-auto" />
+  <HeadingSection heading1="Merchants " heading2="Who Trust Us" description="Shopify merchants love Speed Cart because it boosts conversions, recovers lost sales, and speeds up checkouts" align="text-center mx-auto max-w-[700px]" />
 <GrayLine />
   <div className='lg:py-[28px] lg:px-[26px] px-[16px] py-6'> 
   <SlideCarousel />
@@ -130,7 +130,7 @@ const blogQuestions = [
 <EmptyBox></EmptyBox>
 <GrayLine />
 <ContentWrapper>
-  <HeadingSection heading1="Insights to Accelerate  " heading2="Your Growth" description="Explore proven tactics, tips, and trends to increase conversions, boost cart value, and recover abandoned sales." align="text-center mx-auto" />
+  <HeadingSection heading1="Insights to Accelerate  " heading2="Your Growth" description="Explore proven tactics, tips, and trends to increase conversions, boost cart value, and recover abandoned sales." align="text-center mx-auto max-w-[650px]" />
 <GrayLine />
   <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-[26px] lg:p-[26px] gap-[16px] p-[16px] '>
     <BlogCard />
@@ -146,7 +146,7 @@ const blogQuestions = [
 <GrayLine />
 <ContentWrapper>
   
-<HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left" />
+<HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left max-w-[550px]" />
 
   <GrayLine/>
       <FaqAccordion questions={blogQuestions} />

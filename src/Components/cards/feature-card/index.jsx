@@ -11,21 +11,24 @@ export default function FeatureCard({ image, heading, description, background, l
 
   return (
     <div
-      className={`relative rounded-2xl lg:p-6 p-[16px] ${background} cursor-pointer transition `}
+      className={` rounded-2xl lg:p-6 p-[16px] ${background} cursor-pointer transition `}
       onClick={handleClick}
       onMouseEnter={() => setShowArrow(true)}
       onMouseLeave={() => setShowArrow(false)}
     >
-      <div
-        className={`absolute top-5 right-5 transition-all duration-500 ${
+     
+
+<div className='flex justify-between items-center'>
+
+      <h2 className="md:text-[24px] font-[600] text-[20px]">{heading}</h2>
+       <div
+        className={` transition-all duration-500 ${
           showArrow ? 'opacity-100 ' : 'opacity-0 '
         }`}
       >
         <img src="/images/arrow-right.svg" alt="arrow" className="w-5 h-5" />
       </div>
-
-
-      <h2 className="md:text-[24px] font-[600] text-[20px]">{heading}</h2>
+      </div>
       <p className="font-[400] text-[14px] md:text-[16px] text-gray-500 lg:pb-6 pb-[16px] pt-2">
         {description}
       </p>
