@@ -16,7 +16,7 @@ export default function HoverButton({ text, color, width, border }) {
         <motion.span
           initial={{ y: 0 }}
           animate={{ y: hovered ? -30 : 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
         >
           {text}
@@ -25,7 +25,7 @@ export default function HoverButton({ text, color, width, border }) {
         <motion.span
           initial={{ y: 30 }}
           animate={{ y: hovered ? 0 : 30 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
         >
           {text}

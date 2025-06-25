@@ -1,15 +1,14 @@
 import React from 'react'
-import ContentWrapper from '../content-wrapper'
-import HorizantalLine from '../lines/horizantal-line'
-import ShinyOrangeButton from '../buttons/ShinyOrangeButton'
-import SocialIcon from '../buttons/social-icon'
+import HorizantalLine from '../../lines/horizantal-line'
+import ShinyOrangeButton from '../../buttons/ShinyOrangeButton'
+import SocialIcon from '../../buttons/social-icon'
 import { Link } from 'react-router'
-import OrangeHover from '../buttons/OrangeHover'
+import OrangeHover from '../../buttons/OrangeHover'
 
 export default function Footer() {
   return (
     <div className="bg-[url('/images/footer-bg.svg')] bg-cover bg-center w-full">
-        <div className='border-r-[2px] border-l-[2px] border-[#5D5C5C] max-w-[1286px] mx-auto w-[calc(100%-30px)] lg:w-[calc(100%-40px)] '>
+        <div className='border-r-[1px] border-l-[1px] border-[#5D5C5C] max-w-[1286px] mx-auto w-[calc(100%-30px)] lg:w-[calc(100%-40px)] '>
     
     
             <div className='lg:p-8 p-6'></div>
@@ -30,7 +29,7 @@ export default function Footer() {
             <HorizantalLine color="border-[#5D5C5C]"/>
 <div className='grid lg:grid-cols-3 grid-col-1'>
     {/* column 1 */}
-<div className=' md:p-[26px] p-[16px]  border-r-0 lg:border-r-[2px] border-[#5D5C5C] border-b-[2px]'>
+<div className=' md:p-[26px] p-[16px]  border-r-0 lg:border-r-[1px] border-[#5D5C5C] border-b-[1px]'>
 <img src="/images/footer-logo.svg" alt="" />
 
 <p className='lg:text-[16px] text-[14px] font-[400] text-gray-200 lg:py-[24px] py-[18px]'>Find quick answers to common questions and learn how Speed Cart helps you boost conversions, simplify checkout, and recover more sales.</p>
@@ -47,8 +46,8 @@ export default function Footer() {
 </div>
 </div>
 {/* column 2 */}
-<div className='border-b-[2px] grid grid-cols-2 border-r-0 lg:border-r-[2px] border-[#5D5C5C]'>
-<div className=' md:p-[26px] p-[16px] border-r-[2px] border-[#5D5C5C] flex flex-col gap-[16px]'>
+<div className='border-b-[1px] grid grid-cols-2 border-r-0 lg:border-r-[1px] border-[#5D5C5C]'>
+<div className=' md:p-[26px] p-[16px] border-r-[1px] border-[#5D5C5C] flex flex-col gap-[16px]'>
     <p className='lg:text-[20px] text-[16px] font-[600] text-white'>Solution</p>
     <Link to={"/"} className='font-[400] text-gray-200'>Announcement</Link>
     <Link to={"/"} className='font-[400] text-gray-200'>Upsells</Link>
@@ -61,8 +60,8 @@ export default function Footer() {
 </div>
 <div className=' md:p-[26px] p-[16px] flex flex-col gap-[16px]'>
      <p className='lg:text-[20px] text-[16px] font-[600] text-white'>Company</p>
-    <Link to={"/"} className='font-[400] text-gray-200'>Contact us</Link>
-    <Link to={"/"} className='font-[400] text-gray-200'>Privacy & Policy</Link>
+    <Link to={"/contact"} className='font-[400] text-gray-200'>Contact us</Link>
+    <Link to={"/privacy-policy"} className='font-[400] text-gray-200'>Privacy & Policy</Link>
     <Link to={"/"} className='font-[400] text-gray-200'>Terms & Condition</Link>
     <Link to={"/"} className='font-[400] text-gray-200'>Affiliate Program</Link>
     <Link to={"/"} className='font-[400] text-gray-200'>Our Products</Link>
@@ -70,9 +69,10 @@ export default function Footer() {
 </div>
 </div>
 {/* column 3 */}
-<div className=' lg:p-[26px] p-[18px] border-b-[2px]  border-[#5D5C5C]'>
+<div className=' lg:p-[26px] p-[18px] border-b-[1px]  border-[#5D5C5C]'>
       <p className='lg:text-[20px] text-[16px] font-[600] text-white'>Location</p>
-    <p className='font-[400] text-gray-200 py-[16px]'>4544, Housing, Tangail, Dhaka, Bangladesh</p>
+    <p className='font-[400] text-gray-200 py-[16px]'>125, Palk Road, Wellingborough, ENG
+</p>
       <p className='lg:text-[20px] text-[16px] font-[600] text-white mt-[24px] lg:mt-[48px]'>Subscribe for latest tips</p>
     <div className="flex flex-col sm:flex-row gap-4 py-4 w-full max-w-[500px]">
   <input

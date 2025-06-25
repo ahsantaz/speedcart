@@ -7,6 +7,7 @@ import PageRouter from './Routes/index.jsx'
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
+    
     <BrowserRouter>
     <App />
 <PageRouter>
