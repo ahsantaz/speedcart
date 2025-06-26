@@ -49,14 +49,15 @@ export default function FaqAccordion({ questions }) {
             </button>
 
             <div
-              ref={(el) => (contentRefs.current[index] = el)}
-              style={{
-                maxHeight: isOpen
-                  ? `${contentRefs.current[index]?.scrollHeight}px`
-                  : "0px",
-              }}
-              className="transition-all duration-300 ease-in-out overflow-hidden bg-[#F6F6F6] px-4"
-            >
+  ref={(el) => (contentRefs.current[index] = el)}
+  className={`overflow-hidden transition-[max-height] duration-300 ease-in-out bg-[#F6F6F6] px-4 will-change-[max-height]`}
+  style={{
+    maxHeight: isOpen
+      ? `${contentRefs.current[index]?.scrollHeight}px`
+      : "0px",
+  }}
+>
+
               <div className="pb-2 text-gray-700 lg:text-[16px] text-[14px] font-normal">
                 {item.answer.split("\n").map((line, idx) => (
                   <p key={idx} className="mb-2">
