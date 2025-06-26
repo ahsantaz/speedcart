@@ -6,14 +6,14 @@ export default function StickyCard({ image, heading, description, benefits, flex
     <div className={`flex ${flexstyle} flex-col items-center lg:gap-[26px] gap-[16px] lg:py-8 py-6 lg:px-[26px] px-[16px] min-h-[500px]`}>
       {/* Left image column */}
       <div className='lg:w-1/2 w-full'>
-        <img src={image} alt="" />
+        <img className="rounded-[16px]" src={image} alt="" />
       </div>
 
       {/* Right content column */}
       <div className='lg:w-1/2 w-full'>
         <div>
           <div className='flex w-fit items-center rounded-3xl border-[1px] border-[#FACCBD] p-3 gap-3'>
-            <img src="/images/orange-cart-icon.svg" alt="" />
+            <img  src="/images/orange-cart-icon.svg" alt="" />
             <span className='text-[14px] font-[400] text-gray-900'>{title}</span>
           </div>
 

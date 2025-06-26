@@ -50,31 +50,36 @@ export default function Contact() {
                 <SocialIcon
                   icon="/images/facebook-black.svg"
                   hoverIcon="/images/facebook.svg"
-                  link="https://www.facebook.com/yourpage"
+                  link="https://www.facebook.com/DaisyDiffusion"
                 />
 
                 <SocialIcon
                   icon="/images/linkedin-black.svg"
                   hoverIcon="/images/linkedin.svg"
-                  link="https://www.linkedin.com/in/yourprofile"
+                  link="https://www.linkedin.com/company/daisy-diffusion/"
                 />
 
                 <SocialIcon
                   icon="/images/instagram-black.svg"
                   hoverIcon="/images/instagram.svg"
-                  link="https://www.instagram.com/yourprofile"
+                  link="https://www.instagram.com/daisy_diffusion/"
                 />
 
                 <SocialIcon
                   icon="/images/twitter-black.svg"
                   hoverIcon="/images/twitter.svg"
-                  link="https://twitter.com/yourprofile"
+                  link="https://x.com/DaisyDiffu50543"
                 />
 
                 <SocialIcon
                   icon="/images/social icon.svg"
                   hoverIcon="/images/youtube.svg"
-                  link="https://www.youtube.com/@yourchannel"
+                  link="https://www.youtube.com/@DaisyDiffusion"
+                />
+                <SocialIcon
+                  icon="/images/printrest-dark.svg"
+                  hoverIcon="/images/printrest-light.svg"
+                  link="https://uk.pinterest.com/daisydiffusion/"
                 />
 
               </div>

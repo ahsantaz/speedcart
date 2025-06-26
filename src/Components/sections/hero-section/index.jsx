@@ -8,19 +8,19 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
     <div className="relative">
       <div className="absolute left-1/2 top-0 -translate-x-1/2  border-r-[1px] border-l-[1px] border-[#5D5C5C] max-w-[1286px] h-full z-10 pointer-events-none w-[calc(100%-30px)] lg:w-[calc(100%-40px)]"></div>
 
-      <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full md:pt-[130px] pt-[90px] lg:pb-[64px] pb-[32px]">
+      <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full md:pt-[130px] pt-[92px] lg:pb-[64px] pb-[32px]">
 
         <HorizantalLine color="border-[#5D5C5C]" />
 
-        <div className=" mx-auto pt-8 lg:pt-[64px] pb-4 md:pb-2 lg:pb-[32px] z-20 relative px-6 lg:px-10">
+        <div className=" mx-auto pt-8 lg:pt-[64px] pb-4 md:pb-2 lg:pb-[32px] z-20 relative px-8 lg:px-10">
           <div className="text-center">
-            <span className="inline-flex items-center justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400] text-sm sm:text-base">
+            <span className="inline-flex items-center md:w-auto w-full justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400] text-sm sm:text-base">
               <img src="/images/subtitle.svg" alt="" className="w-4 sm:w-auto" />
               <span>Smarter Carts. Higher Conversions.</span>
             </span>
 
-            <div className="my-5">
-              <p className="font-[700] text-[32px] md:text-[48px] lg:text-[64px] text-white leading-[120%]">
+            <div className="lg:my-5 my-4">
+              <p className="font-[700] text-[32px] md:text-[48px] self-stretch lg:text-[64px] text-white leading-[120%]">
                 <span className="text-sec-orange">{part1}</span> {part2} <br />
                 {part3} <span className="text-sec-orange">{part4}</span> {part5}
               </p>
@@ -29,7 +29,7 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
                 {description}
               </p>
 
-              <div className="flex flex-row gap-2 justify-center my-[16px] lg:my-[32px]">
+              <div className="flex flex-row gap-2 justify-center pt-[32px]">
                 <ShinyOrangeButton text="Get started" link="/" />
                 <HoverButton text="View Demo" color="text-white" width="w-25" link="/" />
               </div>

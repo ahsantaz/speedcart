@@ -30,7 +30,7 @@ export default function StickyCart() {
       <ContentWrapper>
         <div className='py-4'></div>
 
-        <HeadingSection heading1="Sticky Cart Features That" heading2=" Drive Faster Checkouts " description="Reduce friction and speed up conversions by keeping the cart always within reach on every page." align="text-center mx-auto max-w-[800px]" />
+        <HeadingSection heading1="Sticky Cart Features That Drive" heading2=" Faster Checkouts " description="Reduce friction and speed up conversions by keeping the cart always within reach on every page." align="text-center mx-auto max-w-[800px]" />
 
         <GrayLine />
 
