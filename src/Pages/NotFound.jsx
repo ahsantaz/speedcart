@@ -18,7 +18,7 @@ export default function NotFound() {
 <p className='font-[700] text-[32px] md:text-[48px] lg:text-[64px] leading-[120%]'>Oops! Page not found</p>
 <p>The page you’re looking for isn’t here, but we can help you find your way back.</p>
 </div>
-<div className='flex justify-center'><OrangeHover text="Back to Homepage" width="w-40 mx-0" />
+<div className='flex justify-center'><OrangeHover text="Back to Homepage" width="w-40 mx-0"  link="/"/>
 </div>
 </div>
     </div>

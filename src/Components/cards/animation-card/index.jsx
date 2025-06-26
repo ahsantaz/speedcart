@@ -15,7 +15,7 @@ export default function AnimationCard({ heading, description, image }) {
         <h2 className="text-[20px] font-[600] md:text-[24px] pt-3 text-gray-900 group-hover:text-white transition-all duration-700">
           {heading}
         </h2>
-        <p className="text-[14px] md:text-[16px] text-gray-500 pt-2 group-hover:text-white transition-all duration-700">
+        <p className="text-[14px] md:text-[16px] text-gray-700 pt-2 group-hover:text-white transition-all duration-700">
           {description}
         </p>
       </div>

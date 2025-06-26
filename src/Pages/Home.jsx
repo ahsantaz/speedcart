@@ -138,7 +138,7 @@ const blogQuestions = [
     <BlogCard />
   </div>
   <div className='w-40 mx-auto lg:pb-7 pb-5'>
-    <HoverButton text="Read More Blogs" width="w-40" border= "border-2" />
+    <HoverButton text="Read More Blogs" width="w-40" border= "border-2"  link="/" />
   </div>
   </ContentWrapper>
 <GrayLine />

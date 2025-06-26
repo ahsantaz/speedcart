@@ -25,7 +25,7 @@ export default function Footer() {
               </p>   
               </div>  
 <div className='flex justify-center'>
-  <ShinyOrangeButton text="Try For Free"/>
+  <ShinyOrangeButton text="Try For Free"  link="/"/>
 
 </div>
             </div>
@@ -40,11 +40,12 @@ export default function Footer() {
 <div className='lg:py-[24px] py-[18px]'>
     <p className='font-[600] lg:text-[20px] text-[16px] text-white'>Follow us on</p>
     <div className='flex gap-[16px] pt-[16px]'>
-        <SocialIcon icon="/images/facebook.svg" hoverIcon="/images/facebook.svg"/>
-        <SocialIcon icon="/images/linkedin.svg" hoverIcon="/images/linkedin.svg"/>
-        <SocialIcon  icon="/images/instagram.svg" hoverIcon="/images/instagram.svg"/>
-        <SocialIcon icon="/images/twitter.svg" hoverIcon="/images/twitter.svg"/>
-        <SocialIcon   icon="/images/youtube.svg" hoverIcon="/images/youtube.svg"/>
+       <SocialIcon icon="/images/facebook.svg" hoverIcon="/images/facebook.svg" link="https://www.facebook.com/yourpage" />
+<SocialIcon icon="/images/linkedin.svg" hoverIcon="/images/linkedin.svg" link="https://www.linkedin.com/in/yourprofile" />
+<SocialIcon icon="/images/instagram.svg" hoverIcon="/images/instagram.svg" link="https://www.instagram.com/yourprofile" />
+<SocialIcon icon="/images/twitter.svg" hoverIcon="/images/twitter.svg" link="https://twitter.com/yourprofile" />
+<SocialIcon icon="/images/youtube.svg" hoverIcon="/images/youtube.svg" link="https://www.youtube.com/@yourchannel" />
+
     </div>
 </div>
 </div>
@@ -83,7 +84,7 @@ export default function Footer() {
     placeholder="Your Email Address"
     className="w-full sm:w-auto flex-1 px-4 py-2 rounded-3xl border border-gray-300 text-gray-200"
   />
-  <OrangeHover text="Subscribe" width="w-24" />
+  <OrangeHover text="Subscribe" width="w-24"  link="/"/>
 </div>
 
      

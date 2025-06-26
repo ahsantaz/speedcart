@@ -18,7 +18,7 @@ export default function StickyCard({ image, heading, description, benefits, flex
           </div>
 
           <p className='font-[600] lg:text-[40px] text-[24px] py-3'>{heading}</p>
-          <p className='text-gray-500 font-[400] leading-[150%]'>{description}</p>
+          <p className='text-gray-700 font-[400] leading-[150%]'>{description}</p>
 
           <div className='lg:py-[48px] py-[20px] flex flex-col lg:gap-[24px] gap-[12px]'>
             {benefits?.map((item, index) => (
@@ -27,7 +27,7 @@ export default function StickyCard({ image, heading, description, benefits, flex
           </div>
 
           <div className='flex'>
-            <OrangeHover text="Get Started" width="w-27" />
+            <OrangeHover text="Get Started" width="w-27" link="/" />
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function FeatureCard({ image, heading, description, background, l
     </div>
   </div>
 
-  <p className="font-[400] text-[14px] md:text-[16px] text-gray-500 lg:pb-6 pb-[16px] pt-2">
+  <p className="font-[400] text-[14px] md:text-[16px] text-gray-700 lg:pb-6 pb-[16px] pt-2">
     {description}
   </p>
 

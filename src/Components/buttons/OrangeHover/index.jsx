@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router";
 
-export default function OrangeHover({ text, width }) {
+export default function OrangeHover({ text, width, link }) {
   const [hovered, setHovered] = useState(false);
 
   return (
+    <Link to={link}>
     <div  onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
          className={`bg-sec-orange rounded-4xl px-2 py-3 flex justify-center shadow-[inset_0_-2px_15px_0_rgba(199,199,199,0.25),inset_0_4px_15px_0_rgba(199,199,199,0.25)] cursor-pointer` }>
@@ -32,5 +34,6 @@ export default function OrangeHover({ text, width }) {
         </motion.span>
       </button>
     </div>
+    </Link>
   );
 }

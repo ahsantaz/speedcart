@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router";
 
-export default function HoverButton({ text, color, width, border }) {
+export default function HoverButton({ text, color, width, border , link}) {
   const [hovered, setHovered] = useState(false);
 
   return (
+    <Link to={link}>
     <div  onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
          className={` rounded-4xl px-2 py-3 flex justify-center  cursor-pointer ${border}` }>
@@ -32,5 +34,6 @@ export default function HoverButton({ text, color, width, border }) {
         </motion.span>
       </button>
     </div>
+    </Link>
   );
 }

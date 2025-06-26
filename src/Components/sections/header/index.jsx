@@ -115,8 +115,8 @@ export default function Header() {
 
           {/* Buttons Section */}
           <div className="flex gap-2 mt-4 lg:mt-0">
-            <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25" />
-            <OrangeHover text="Try Free" width="w-20" />
+            <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25"  link="/"/>
+            <OrangeHover text="Try Free" width="w-20"  link="/"/>
           </div>
         </div>
       </div>

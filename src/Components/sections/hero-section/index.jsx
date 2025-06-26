@@ -30,8 +30,8 @@ export default function Hero_section({part1, part2, part3, part4, part5, descrip
               </p>
 
               <div className="flex flex-row gap-2 justify-center my-[16px] lg:my-[32px]">
-<ShinyOrangeButton text="Get started"/>
-                <HoverButton text="View Demo" color="text-white" width="w-25" />
+<ShinyOrangeButton text="Get started"  link="/"/>
+                <HoverButton text="View Demo" color="text-white" width="w-25"  link="/"/>
               </div>
             </div>
 
