@@ -70,7 +70,7 @@ export default function SlideCarousel() {
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           disabled={isBeginning}
-          className={`p-2 rounded-full group hover:border-sec-orange border-2 transition flex items-center justify-center
+          className={`p-2 rounded-full group  border-2 transition flex items-center justify-center
             ${isBeginning
               ? ' border-gray-400 cursor-auto'
               : 'bg-white border-black hover:border-[#F05A29] cursor-pointer'
@@ -90,7 +90,7 @@ export default function SlideCarousel() {
         <button
           onClick={() => swiperRef.current?.slideNext()}
           disabled={isEnd}
-          className={`p-2  group rounded-full border-2 transition flex items-center justify-center hover:border-sec-orange
+          className={`p-2  group rounded-full border-2 transition flex items-center justify-center 
             ${isEnd
               ? ' border-gray-500 cursor-auto'
               : 'bg-white border-black hover:border-[#F05A29] cursor-pointer'
