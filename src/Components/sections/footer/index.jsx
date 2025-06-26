@@ -40,11 +40,11 @@ export default function Footer() {
 <div className='lg:py-[24px] py-[18px]'>
     <p className='font-[600] lg:text-[20px] text-[16px] text-white'>Follow us on</p>
     <div className='flex gap-[16px] pt-[16px]'>
-        <SocialIcon  icon="/images/facebook.svg"/>
-        <SocialIcon  icon="/images/linkedin.svg"/>
-        <SocialIcon  icon="/images/instagram.svg"/>
-        <SocialIcon  icon="/images/twitter.svg"/>
-        <SocialIcon  icon="/images/youtube.svg"/>
+        <SocialIcon icon="/images/facebook.svg" hoverIcon="/images/facebook.svg"/>
+        <SocialIcon icon="/images/linkedin.svg" hoverIcon="/images/linkedin.svg"/>
+        <SocialIcon  icon="/images/instagram.svg" hoverIcon="/images/instagram.svg"/>
+        <SocialIcon icon="/images/twitter.svg" hoverIcon="/images/twitter.svg"/>
+        <SocialIcon   icon="/images/youtube.svg" hoverIcon="/images/youtube.svg"/>
     </div>
 </div>
 </div>

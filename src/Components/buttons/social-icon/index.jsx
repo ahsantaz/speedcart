@@ -5,7 +5,7 @@ export default function SocialIcon({ icon, hoverIcon }) {
 
   return (
     <div
-      className='rounded-[10px] hover:bg-sec-orange duration-500 cursor-pointer'
+      className='rounded-[10px] hover:bg-sec-orange duration-300 cursor-pointer'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
