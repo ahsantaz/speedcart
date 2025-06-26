@@ -3,13 +3,13 @@ import HorizantalLine from '../../lines/horizantal-line'
 import HoverButton from '../../buttons/HoverButton'
 import ShinyOrangeButton from '../../buttons/ShinyOrangeButton'
 
-export default function Hero_section({part1, part2, part3, part4, part5, description, image}) {
+export default function Hero_section({ part1, part2, part3, part4, part5, description, image }) {
   return (
     <div className="relative">
       <div className="absolute left-1/2 top-0 -translate-x-1/2  border-r-[1px] border-l-[1px] border-[#5D5C5C] max-w-[1286px] h-full z-10 pointer-events-none w-[calc(100%-30px)] lg:w-[calc(100%-40px)]"></div>
 
       <div className="bg-[#1a1a1a] bg-[url('/images/hero-background.svg')] bg-cover bg-center w-full md:pt-[130px] pt-[90px] lg:pb-[64px] pb-[32px]">
-      
+
         <HorizantalLine color="border-[#5D5C5C]" />
 
         <div className=" mx-auto pt-8 lg:pt-[64px] pb-4 md:pb-2 lg:pb-[32px] z-20 relative px-6 lg:px-10">
@@ -26,23 +26,23 @@ export default function Hero_section({part1, part2, part3, part4, part5, descrip
               </p>
 
               <p className="text-[#C9C9C9] leading-[150%] font-[400] mt-6 max-w-150 mx-auto text-sm sm:text-base">
-               {description}
+                {description}
               </p>
 
               <div className="flex flex-row gap-2 justify-center my-[16px] lg:my-[32px]">
-<ShinyOrangeButton text="Get started"  link="/"/>
-                <HoverButton text="View Demo" color="text-white" width="w-25"  link="/"/>
+                <ShinyOrangeButton text="Get started" link="/" />
+                <HoverButton text="View Demo" color="text-white" width="w-25" link="/" />
               </div>
             </div>
 
             <div className="max-w-[1024px]  mx-auto mt-6 md:mt-10">
               <img src={image} alt="home banner" />
-       </div>
+            </div>
           </div>
         </div>
         <HorizantalLine color="border-[#5D5C5C]" />
 
-      
+
       </div>
     </div>
   )

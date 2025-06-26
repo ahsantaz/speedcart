@@ -31,7 +31,7 @@ export default function Header() {
 
         {/* Nav Links + Buttons Container */}
         <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-[6px] left-1/2 transform -translate-x-1/2 w-[calc(100%-40px)] bg-white rounded-xl shadow-xl p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[50px] lg:gap-10`}>
-          
+
           {/* Nav Links */}
           <ul className="lg:flex lg:space-x-4 items-start lg:items-center space-y-3 lg:space-y-0">
             <li>
@@ -115,8 +115,8 @@ export default function Header() {
 
           {/* Buttons Section */}
           <div className="flex gap-2 mt-4 lg:mt-0">
-            <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25"  link="/"/>
-            <OrangeHover text="Try Free" width="w-20"  link="/"/>
+            <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25" link="/" />
+            <OrangeHover text="Try Free" width="w-20" link="/" />
           </div>
         </div>
       </div>

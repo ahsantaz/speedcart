@@ -15,21 +15,21 @@ import Privacy from '../Pages/Privacy-policy'
 export default function PageRouter() {
   return (
     <>
-          
-  <Header />
-    <Routes>
+
+      <Header />
+      <Routes>
         <Route index element={<Home />} />
-                <Route path='/cart-editor' element={<CartEditor />} />
-                <Route path='/sticky-cart' element={<StickyCart />} />
-                <Route path='/abandoned-cart' element={<AbandonedCart />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/privacy-policy' element={<Privacy />} />
+        <Route path='/cart-editor' element={<CartEditor />} />
+        <Route path='/sticky-cart' element={<StickyCart />} />
+        <Route path='/abandoned-cart' element={<AbandonedCart />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/privacy-policy' element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
 
-       
-    </Routes>
-    <Footer />
+
+      </Routes>
+      <Footer />
     </>
   )
 }
