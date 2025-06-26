@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import TopLeft from "../../circle/top-left";
+import TopRight from "../../circle/top-right";
 
 export default function FaqAccordion({ questions }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -9,7 +11,9 @@ export default function FaqAccordion({ questions }) {
   };
 
   return (
-    <div className="w-full mx-auto lg:px-[26px] px-[16px] lg:py-[16px] py-2" id="accordion">
+    <div className="relative w-full mx-auto lg:px-[26px] px-[16px] lg:py-[16px] py-2" id="accordion">
+          <TopLeft />
+                    <TopRight />
       {questions.map((item, index) => {
         const isOpen = openIndex === index;
 

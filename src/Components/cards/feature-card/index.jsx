@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import TopLeft from '../../circle/top-left';
+import TopRight from '../../circle/top-right';
 
 export default function FeatureCard({ image, heading, description, background, link }) {
   const navigate = useNavigate();
@@ -11,11 +13,12 @@ export default function FeatureCard({ image, heading, description, background, l
 
   return (
     <div
-      className={`flex flex-col rounded-2xl lg:p-6 p-[16px] ${background} cursor-pointer transition h-full`}
+      className={` flex flex-col rounded-2xl lg:p-6 p-[16px] ${background} cursor-pointer transition h-full`}
       onClick={handleClick}
       onMouseEnter={() => setShowArrow(true)}
       onMouseLeave={() => setShowArrow(false)}
     >
+          
       <div className='flex justify-between items-center'>
         <h2 className="md:text-[24px] font-[600] text-[20px]">{heading}</h2>
         <div

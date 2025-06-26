@@ -6,6 +6,9 @@ import EmptyBox from '../Components/lines/empty-box'
 import HorizantalLine from '../Components/lines/horizantal-line'
 import HeadingSection from '../Components/headings/heading-center'
 import AboutCard from '../Components/cards/about-card'
+import TopLeft from '../Components/circle/top-left'
+import TopRight from '../Components/circle/top-right'
+import BottomLeft from '../Components/circle/bottom-left'
 
 export default function About() {
   const GrayLine = () => <HorizantalLine color="border-gray-200" />;
@@ -59,11 +62,15 @@ export default function About() {
       <EmptyBox></EmptyBox>
       <GrayLine />
       <ContentWrapper>
+         <TopLeft />
+              <TopRight />
         <HeadingSection heading1="Why We Build " heading2="Shopify Apps" description="Merchants deserve practical, user-friendly tools developed with growth in mind. Our objective is to simplify e-commerce management and help brands open new earnings chances without technical headaches. 
 " align="text-center mx-auto max-w-[700px]" />
         <GrayLine />
-        <div className='grid lg:grid-cols-8 grid-cols-1'>
+        <div className='relative grid lg:grid-cols-8 grid-cols-1'>
           {/* Left Column */}
+           <TopLeft />
+                <TopRight />
           <div className='lg:p-[26px] p-[16px] lg:col-span-5 col-span-1 lg:border-r-[1px] lg:border-b-0 border-b-[1px] border-gray-200 flex justify-center items-center'>
             <img className='rounded-xl w-full' src="/images/intro-video.svg" alt="" />
           </div>
@@ -72,7 +79,8 @@ export default function About() {
           <div className='flex flex-col lg:col-span-3 col-span-1 lg:border-b-0 border-b-[1px] border-gray-200 min-h-0'>
 
             {/* Top Half */}
-            <div className='flex-1 border-b-[1px] border-gray-200 lg:p-[26px] p-[16px]'>
+            <div className='relative flex-1 border-b-[1px] border-gray-200 lg:p-[26px] p-[16px]'>
+               <TopLeft />
               <div className="bg-[url('/images/footer-bg.svg')] bg-cover bg-center w-full h-full rounded-xl flex flex-col lg:gap-2 gap-[24px] p-[16px]">
                 <p className='font-[600] lg:text-[24px] text-[20px] text-white'>
                   Customize Cart Without Code
@@ -84,7 +92,10 @@ export default function About() {
             </div>
 
             {/* Bottom Half */}
-            <div className='flex-1  lg:p-[26px] p-[16px]'>
+            <div className='flex-1 relative lg:p-[26px] p-[16px]'>
+               <TopLeft />
+                    <TopRight />
+                    <BottomLeft />
               <div className='w-full h-full rounded-xl flex flex-col lg:gap-2 gap-[24px] justify-between p-[16px] bg-[#F6F6F6]'>
                 <p className='text-gray-900 lg:text-[16px] text-[14px] font-[400]'>
                   <span className='font-[600]'> Were here for you.</span> Our support team is available 24/7 tro assist with any questions or issues
@@ -103,10 +114,15 @@ export default function About() {
       <EmptyBox></EmptyBox>
       <GrayLine />
       <ContentWrapper>
+         <TopLeft />
+              <TopRight />
         <HeadingSection heading1="Sign up with" heading2="the Community" description="Speed Cart combines powerful customization, upsells, and recovery tools in one lightweight, high-performance Shopify app" align="text-left max-w-[700px]" />
         <GrayLine />
-        <div className='flex lg:flex-row flex-col lg:gap-[26px] gap-[16px] lg:px-[26px] px-[16px] lg:py-[28px] p-[16px]'>
+        <div className='flex relative lg:flex-row flex-col lg:gap-[26px] gap-[16px] lg:px-[26px] px-[16px] lg:py-[28px] p-[16px]'>
+           <TopLeft />
+                <TopRight />
           <div className='lg:w-[60%] w-full lg:py-[26px] py-0'>
+
             <p className='lg:text-[40px] text-[24px] leading-[120%] font-[500] text-black'>A Community Built for Shopify Success</p>
             <p className='text-gray-700 font-[400] md:text-[16px] text-[14px] lg:py-[24px] py-4'>
               Countless Shopify store owners rely on apps developed by DaisyDiffusion to grow smarter, sell better, and serve faster. From customizing checkout experiences with Speed Cart to offering product protection with  {' '}

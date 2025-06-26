@@ -82,7 +82,7 @@ useEffect(() => {
 
 
               {/* Dropdown Menu */}
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${dropdownVisible ? ' opacity-100' : ' opacity-0'} w-full lg:absolute lg:top-10 lg:left-[-16px] lg:w-[388px] lg:rounded-2xl lg:bg-white lg:p-4 lg:shadow-[0px_4px_20px_0px_rgba(65,65,65,0.15)] lg:border lg:border-[#E8E8E8]`}>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${dropdownVisible ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} w-full lg:absolute lg:top-10 lg:left-[-16px] lg:w-[388px] lg:rounded-2xl lg:bg-white lg:p-4 lg:shadow-[0px_4px_20px_0px_rgba(65,65,65,0.15)] lg:border lg:border-[#E8E8E8]`}>
                 <ul className="lg:space-y-4 space-y-3 px-1 pt-3 lg:px-4 lg:py-4">
                   {[
                     {

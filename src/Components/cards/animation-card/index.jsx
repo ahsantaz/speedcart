@@ -5,7 +5,7 @@ export default function AnimationCard({ heading, description, image }) {
 
 
     <>
-      <div className="absolute bottom-0 left-0 w-full h-0 bg-black opacity-0 group-hover:h-120 group-hover:opacity-100 transition-all duration-700 ease-in-out z-0" />
+      <div className="absolute bottom-0 left-0 w-full h-0 bg-black opacity-0 group-hover:h-full group-hover:opacity-100 transition-all  duration-700 ease-in-out z-0" />
 
 
       <div className="relative z-10">

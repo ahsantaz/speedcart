@@ -1,9 +1,17 @@
 import OrangeHover from "../../buttons/OrangeHover";
+import BottomLeft from "../../circle/bottom-left";
+import BottomRight from "../../circle/bottom-right";
+import TopLeft from "../../circle/top-left";
+import TopRight from "../../circle/top-right";
 import Benefit from "../../headings/benefit-text";
 
 export default function StickyCard({ image, heading, description, benefits, flexstyle, title }) {
   return (
-    <div className={`flex ${flexstyle} flex-col items-center lg:gap-[26px] gap-[16px] lg:py-8 py-6 lg:px-[26px] px-[16px] min-h-[500px]`}>
+    <div className={`flex ${flexstyle} flex-col items-center lg:gap-[26px] gap-[16px] lg:py-8 py-6 lg:px-[26px] px-[16px] min-h-[500px] relative`}>
+      <TopLeft />
+      <TopRight />
+      <BottomRight />
+      <BottomLeft />
       {/* Left image column */}
       <div className='lg:w-1/2 w-full'>
         <img className="rounded-[16px]" src={image} alt="" />

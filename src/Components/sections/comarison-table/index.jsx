@@ -1,5 +1,7 @@
 import React from "react";
 import "./shade.css"; // Includes gradient-column class
+import TopLeft from "../../circle/top-left";
+import TopRight from "../../circle/top-right";
 
 const features = [
   "Cart templates",
@@ -23,7 +25,9 @@ const data = {
 
 const ComparisonTable = () => {
   return (
-    <div className="max-w-[1286px] mx-auto lg:px-[26px] px-[18px] py-6 lg:py-[32px]">
+    <div className="relative max-w-[1286px] mx-auto lg:px-[26px] px-[18px] py-6 lg:py-[32px]">
+          <TopLeft />
+                    <TopRight />
       <div className="overflow-x-auto">
         <div className="relative gradient-column min-w-[700px]">
           <table className="table-fixed w-full text-left border-separate border-spacing-x-4 border-spacing-y-0 border-gray-200 rounded-lg overflow-hidden relative z-10">

@@ -7,6 +7,8 @@ import FaqAccordion from '../Components/sections/FaqAccordin';
 import HeadingFlex from '../Components/headings/heading-flex';
 import EmptyBox from '../Components/lines/empty-box';
 import StickyCard from '../Components/cards/sticky-card';
+import TopLeft from '../Components/circle/top-left';
+import TopRight from '../Components/circle/top-right';
 
 export default function AbandonedCart() {
   const GrayLine = () => <HorizantalLine color="border-gray-200" />;
@@ -82,7 +84,8 @@ export default function AbandonedCart() {
       <GrayLine />
 
       <ContentWrapper>
-
+ <TopLeft />
+      <TopRight />
         {/* questions section */}
         <HeadingFlex heading1="All You Need to Know  " heading2="About Speed Cart" description="Got qustions? Here’s everythings you need to know about installing, using and growing with Speed Cart." align="text-left max-w-[550px]" />
 
