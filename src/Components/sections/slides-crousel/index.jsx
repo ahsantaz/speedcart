@@ -49,13 +49,17 @@ export default function SlideCarousel() {
   }}
       >
          {cards.map((card, idx) => (
-          <SwiperSlide key={idx} className='h-full'>
-            <div className="bg-[#F6F6F6] rounded-xl lg:p-[24px] p-[18px] ">
-            <p className='text-gray-500 font-[400] lg:pb-6 pb-[18px]'>{card.text}</p>
-            <h4 className='text-gray-900 font-[600] pb-[4px]'>{card.client}</h4>
-            <p className='text-gray-500 text-[14px] font-[400]'>{card.work}</p>
-            </div>
-          </SwiperSlide>
+       <SwiperSlide key={idx} className="!h-auto">
+  <div className="flex flex-col h-full  bg-[#F6F6F6] rounded-xl lg:p-[24px] p-[18px]">
+    <p className="text-gray-500 font-[400] lg:text-[16px] text-[14px]">{card.text}</p>
+
+    <div className="mt-auto pt-[24px]">
+      <h4 className="text-gray-900 font-[600] pb-[4px] lg:text-[16px] text-[14px]">{card.client}</h4>
+      <p className="text-gray-500 text-[14px] font-[400]">{card.work}</p>
+    </div>
+  </div>
+</SwiperSlide>
+
         ))}
        
       </Swiper>
