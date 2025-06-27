@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import HoverButton from '../../buttons/HoverButton';
 import OrangeHover from '../../buttons/OrangeHover';
 import { Link, NavLink, useLocation } from 'react-router-dom';
@@ -8,6 +8,10 @@ export default function Header() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 const location = useLocation();
+const dropdownRef = useRef(null);
+const mobileMenuRef = useRef(null);
+
+
 
 useEffect(() => {
   setDropdownVisible(false);
@@ -23,8 +27,34 @@ useEffect(() => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    // Close dropdown if click is outside dropdownRef
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownVisible(false);
+      setRotated(false);
+    }
+
+    // Close mobile menu if click is outside mobileMenuRef and menu icon
+    if (
+      mobileMenuRef.current &&
+      !mobileMenuRef.current.contains(event.target) &&
+      !event.target.closest('img[src="/images/menu-lines.svg"]')
+    ) {
+      setMobileMenuOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+
+
+
   return (
-    <div className="fixed md:top-[26px] top-4 left-1/2 transform -translate-x-1/2 z-70 bg-white p-[16px]  rounded-[50px] shadow-[0px_2px_20px_0px_rgba(65,65,65,0.10)] border-[1px] border-[#E8E8E8] w-[calc(100%-64px)] max-w-[850px]">
+    <div className="fixed md:top-[26px] top-4 left-1/2 transform -translate-x-1/2 z-70 bg-white p-[16px]  rounded-[50px] shadow-[0px_2px_20px_0px_rgba(65,65,65,0.10)] border-[1px] border-[#E8E8E8] w-[calc(100%-64px)] max-w-[850px]" ref={dropdownRef}>
       {/* Outer Flex Container */}
       <div className="flex justify-between items-center w-full">
         {/* Logo */}
@@ -34,10 +64,10 @@ useEffect(() => {
         </div>
 </Link>
         {/* Menu icon for small screen */}
-        <img className="lg:hidden cursor-pointer" src="/images/menu-lines.svg" onClick={toggleMobileMenu} alt="menu" />
+        <img className="lg:hidden cursor-pointer" src="/images/menu-lines.svg" onClick={toggleMobileMenu} alt="menu"/>
 
         {/* Nav Links + Buttons Container */}
-        <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-[8.5px] left-1/2 transform -translate-x-1/2 w-[calc(100%-54px)] bg-white rounded-bl-xl rounded-br-xl shadow-xl border-b-[1px] border-r-[1px] border-l-[1px] border-[#E8E8E8] p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[52px] lg:gap-10`}>
+        <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-[8.5px] left-1/2 transform -translate-x-1/2 w-[calc(100%-54px)] bg-white rounded-bl-xl rounded-br-xl shadow-xl border-b-[1px] border-r-[1px] border-l-[1px] border-[#E8E8E8] p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[52px] lg:gap-10`}   ref={mobileMenuRef}>
 
           {/* Nav Links */}
           <ul className="lg:flex lg:space-x-4 items-start lg:items-center space-y-3 lg:space-y-0">
@@ -54,7 +84,7 @@ useEffect(() => {
             </li>
 
             {/* Features with dropdown */}
-            <li onClick={toggleDropdown} className="relative group cursor-pointer">
+            <li onClick={toggleDropdown} className="relative group cursor-pointer" ref={dropdownRef}>
               <span
   className={`flex items-center justify-between w-full ${dropdownVisible ? 'text-[#F05A29]' : 'text-[#3F3F3F]'} hover:text-[#F05A29] lg:text-[16px] text-[14px]`}
 >
