@@ -34,7 +34,7 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
 <BottomLeftBlack />
 <BottomRightBlack />
 
-        <div className=" mx-auto pt-8 lg:pt-[64px] pb-4 md:pb-2 lg:pb-[32px] z-20 relative px-8 lg:px-10">
+        <div className=" mx-auto pt-8 lg:pt-[64px] pb-4 md:pb-2 lg:pb-[32px] z-20 relative px-4 lg:px-8">
           <div className="text-center">
             <span className="inline-flex items-center md:w-auto w-full justify-center py-2 px-3 rounded-[50px] border border-[#FACCBD] gap-2 text-white font-[400] text-sm sm:text-base">
               <img src="/images/subtitle.svg" alt="" className="w-4 sm:w-auto" />
@@ -42,9 +42,8 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
             </span>
 
             <div className="lg:my-5 my-4">
-              <p className="font-[700] text-[32px] md:text-[48px] self-stretch lg:text-[64px] text-white leading-[120%]">
-                <span className="text-sec-orange">{part1}</span> {part2} <br />
-                {part3} <span className="text-sec-orange">{part4}</span> {part5}
+              <p className="font-[700] text-[32px] md:text-[48px] self-stretch lg:text-[64px] text-white leading-[120%] lg:max-w-[600px] md:max-w-[500px] sm:max-w-[300px] mx-auto" >
+                <span className="text-sec-orange">{part1}</span> {part2} {part3} <span className="text-sec-orange">{part4}</span> {part5}
               </p>
 
               <p className="text-[#C9C9C9] leading-[150%] font-[400] mt-6 max-w-150 mx-auto text-sm sm:text-base">

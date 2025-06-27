@@ -39,7 +39,7 @@ export default function Footer() {
         <HorizantalLine color="border-[#5D5C5C]" />
         <div className='grid lg:grid-cols-3 grid-col-1'>
           {/* column 1 */}
-          <div className='relative md:p-[26px] p-[16px]  border-r-0 lg:border-r-[1px] border-[#5D5C5C] border-b-[1px]'>
+          <div className='relative lg:p-[26px] p-[16px]  border-r-0 lg:border-r-[1px] border-[#5D5C5C] border-b-[1px]'>
             <TopLeftBlack />
 <TopRightBlack />
 <BottomLeftBlack />
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
           {/* column 2 */}
           <div className='border-b-[1px] grid grid-cols-2 border-r-0 lg:border-r-[1px] border-[#5D5C5C]'>
-            <div className='relative md:p-[26px] p-[16px] border-r-[1px] border-[#5D5C5C] flex flex-col gap-[16px]'>
+            <div className='relative lg:p-[26px] p-[16px] border-r-[1px] border-[#5D5C5C] flex flex-col gap-[16px]'>
           
 <TopRightBlack />
 
@@ -78,7 +78,7 @@ export default function Footer() {
               <Link to={"/"} className='font-[400] text-gray-200'>Sticky Cart</Link>
               <Link to={"/"} className='font-[400] text-gray-200'>Abandoned Cart</Link>
             </div>
-            <div className='relative md:p-[26px] p-[16px] flex flex-col gap-[16px]'>
+            <div className='relative lg:p-[26px] p-[16px] flex flex-col gap-[16px]'>
                         
 <TopRightBlack />
 
