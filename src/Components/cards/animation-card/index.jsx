@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-export default function AnimationCard({ heading, description, image }) {
+export default function AnimationCard({ heading, description, image, link }) {
   return (
 
 
-    <>
+    <><Link to={link}>
+
+    
       <div className="absolute bottom-0 left-0 w-full h-0 bg-black opacity-0 group-hover:h-full group-hover:opacity-100 transition-all  duration-700 ease-in-out z-0" />
 
 
@@ -19,6 +22,7 @@ export default function AnimationCard({ heading, description, image }) {
           {description}
         </p>
       </div>
+      </Link>
     </>
 
   );

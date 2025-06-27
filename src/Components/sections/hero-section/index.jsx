@@ -42,9 +42,9 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
             </span>
 
             <div className="lg:my-5 my-4">
-              <p className="font-[700] text-[32px] md:text-[48px] self-stretch lg:text-[64px] text-white leading-[120%] lg:max-w-[785px] md:max-w-[500px] sm:max-w-[300px] mx-auto" >
+              <h1 className="font-[700] text-[32px] md:text-[48px] self-stretch lg:text-[64px] text-white leading-[120%] lg:max-w-[785px] md:max-w-[500px] sm:max-w-[300px] mx-auto" >
                 <span className="text-sec-orange">{part1}</span> {part2} {part3} <span className="text-sec-orange">{part4}</span> {part5}
-              </p>
+              </h1>
 
               <p className="text-[#C9C9C9] leading-[150%] font-[400] mt-6 max-w-150 mx-auto text-sm sm:text-base">
                 {description}

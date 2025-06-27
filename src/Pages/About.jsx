@@ -43,9 +43,9 @@ export default function About() {
             </div>
           </div>
           <div className='flex flex-col gap-[16px]'>
-            <h1 className='lg:text-[48px] text-[28px] leading-[120%] font-[600] text-black mb-4 capitalize'>
+            <h2 className='lg:text-[48px] text-[28px] leading-[120%] font-[600] text-black mb-4 capitalize'>
               Our Story,  <span className='text-sec-orange'>Your Sales Boost</span>
-            </h1>
+            </h2>
             <p className='text-gray-700 font-[400] md:text-[16px] text-[14px]'>At Speed Cart, we're passionate about making Shopify stores quicker, more innovative, and more lucrative. Constructed by the team at DaisyDiffusion.com, we concentrate on establishing high-performance Shopify apps that fix real problems for modern merchants.
             </p>
             <p className='text-gray-700 font-[400] md:text-[16px] text-[14px]'>From cart modification to checkout optimization and sales recovery, Speed Cart is created to give you overall control over your shop's cart experience. It helps you quickly enhance conversions, boost order value, and recover lost sales.

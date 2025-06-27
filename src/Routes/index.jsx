@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router'
+import { Routes, Route, Router } from 'react-router'
 import Home from '../Pages/Home'
 
 import CartEditor from '../Pages/Cart-editor'
@@ -11,12 +11,16 @@ import NotFound from '../Pages/NotFound'
 import Contact from '../Pages/Contact'
 import About from '../Pages/About'
 import Privacy from '../Pages/Privacy-policy'
+import ScrollToTop from '../Components/scrolltop'
 
 export default function PageRouter() {
   return (
     <>
 
       <Header />
+    
+
+    <ScrollToTop />
       <Routes>
         <Route index element={<Home />} />
         <Route path='/cart-editor' element={<CartEditor />} />
@@ -29,6 +33,7 @@ export default function PageRouter() {
 
 
       </Routes>
+       
       <Footer />
     </>
   )

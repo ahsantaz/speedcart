@@ -34,9 +34,9 @@ export default function Contact() {
           <div className='lg:border-r-[1px] relative border-r-0 border-gray-200'>
           <BottomRight />
             <div className={`text-left  lg:p-[26px] p-[16px]`}>
-              <h1 className='md:text-[48px] text-[28px] leading-[120%] font-[600] text-black mb-4 capitalize'>
+              <h2 className='md:text-[48px] text-[28px] leading-[120%] font-[600] text-black mb-4 capitalize'>
                 Have A <span className='text-sec-orange'>Question?</span>
-              </h1>
+              </h2>
               <p className='text-gray-700 font-[400] md:text-[16px] text-[14px]'>Our team is here to help with anything—from feature questions to technical support.</p>
             </div>
             <GrayLine />

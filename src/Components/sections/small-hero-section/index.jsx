@@ -19,7 +19,7 @@ export default function SmallHeroSection({ text, date }) {
 
         <div className=" mx-auto lg:py-[64px] py-[32px] z-20 relative px-6 md:px-10">
           <div className="text-center">
-            <p className='font-[600] text-[28px] lg:text-[48px] text-gray-50 leading-[120%]'>{text}</p>
+            <h1 className='font-[600] text-[28px] lg:text-[48px] text-gray-50 leading-[120%]'>{text}</h1>
             {date && <p className='text-[#F6F6F6] pt-[12px]'>{date}</p>
             }
           </div>

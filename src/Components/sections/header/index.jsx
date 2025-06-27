@@ -24,7 +24,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="fixed md:top-[26px] top-4 left-1/2 transform -translate-x-1/2 z-40 bg-white p-[16px]  rounded-[50px] shadow-[0px_2px_20px_0px_rgba(65,65,65,0.10)] border-[1px] border-[#E8E8E8] w-[calc(100%-64px)] max-w-[850px]">
+    <div className="fixed md:top-[26px] top-4 left-1/2 transform -translate-x-1/2 z-70 bg-white p-[16px]  rounded-[50px] shadow-[0px_2px_20px_0px_rgba(65,65,65,0.10)] border-[1px] border-[#E8E8E8] w-[calc(100%-64px)] max-w-[850px]">
       {/* Outer Flex Container */}
       <div className="flex justify-between items-center w-full">
         {/* Logo */}
@@ -37,7 +37,7 @@ useEffect(() => {
         <img className="lg:hidden cursor-pointer" src="/images/menu-lines.svg" onClick={toggleMobileMenu} alt="menu" />
 
         {/* Nav Links + Buttons Container */}
-        <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-[6px] left-1/2 transform -translate-x-1/2 w-[calc(100%-54px)] bg-white rounded-bl-xl rounded-br-xl shadow-xl p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[52px] lg:gap-10`}>
+        <div className={`lg:flex ${mobileMenuOpen ? 'flex flex-col items-start mt-[8.5px] left-1/2 transform -translate-x-1/2 w-[calc(100%-54px)] bg-white rounded-bl-xl rounded-br-xl shadow-xl border-b-[1px] border-r-[1px] border-l-[1px] border-[#E8E8E8] p-4' : 'hidden'} lg:mt-0 lg:bg-transparent lg:shadow-none lg:rounded-none absolute lg:relative lg:top-auto top-[52px] lg:gap-10`}>
 
           {/* Nav Links */}
           <ul className="lg:flex lg:space-x-4 items-start lg:items-center space-y-3 lg:space-y-0">
@@ -104,7 +104,7 @@ useEffect(() => {
                       desc: "Recover lost sales with smart cart reminders.",
                     },
                     {
-                      path: "/",
+                      path: "/cart-editor",
                       icon: "/images/dropdown4.svg",
                       title: "Cart Templates",
                       desc: "Recover lost sales with smart cart reminders.",
@@ -167,7 +167,7 @@ useEffect(() => {
           </ul>
 
           {/* Buttons Section */}
-        <div className="flex lg:gap-2 gap-0 mt-4 lg:mt-0">
+        <div className="flex flex-row-reverse lg:flex-row lg:gap-2 gap-0 mt-4 lg:mt-0">
             <HoverButton text="View Demo" background="bg-white" color="text-black" width="w-25" link="/" />
             <OrangeHover text="Try Free" width="w-20" link="/" />
           </div>

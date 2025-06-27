@@ -69,14 +69,14 @@ export default function Footer() {
 
 <BottomRightBlack />
               <p className='lg:text-[20px] text-[16px] font-[600] text-white'>Solution</p>
-              <Link to={"/"} className='font-[400] text-gray-200'>Announcement</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Upsells</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Rewards</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Coupon Codes</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Shipping Proection</Link>
+              <Link to={"/cart-editor"} className='font-[400] text-gray-200'>Announcement</Link>
+              <Link to={"/cart-editor"} className='font-[400] text-gray-200'>Upsells</Link>
+              <Link to={"/cart-editor"} className='font-[400] text-gray-200'>Rewards</Link>
+              <Link to={"/cart-editor"} className='font-[400] text-gray-200'>Coupon Codes</Link>
+              <Link to={"/cart-editor"} className='font-[400] text-gray-200'>Shipping Proection</Link>
               <Link to={"/"} className='font-[400] text-gray-200'>Gift Wrapping</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Sticky Cart</Link>
-              <Link to={"/"} className='font-[400] text-gray-200'>Abandoned Cart</Link>
+              <Link to={"/sticky-cart"} className='font-[400] text-gray-200'>Sticky Cart</Link>
+              <Link to={"/abandoned-cart"} className='font-[400] text-gray-200'>Abandoned Cart</Link>
             </div>
             <div className='relative lg:p-[26px] p-[16px] flex flex-col gap-[16px]'>
                         

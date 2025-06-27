@@ -18,6 +18,7 @@ import BottomLeft from '../Components/circle/bottom-left'
 import BottomRight from '../Components/circle/bottom-right'
 import TopLeft from '../Components/circle/top-left'
 import TopRight from '../Components/circle/top-right'
+import { Link } from 'react-router'
 export default function Home() {
 
   const GrayLine = () => <HorizantalLine color="border-gray-200" />;
@@ -67,7 +68,7 @@ export default function Home() {
           <div className='relative lg:p-[26px] p-[16px]  border-t-[1px] border-gray-200'>
            
               <BottomLeft />
-              <TopRight /> <FeatureCard heading="Cart Templates" description="Customize cart layouts, colors, promotions, product suggestions, trust badges, and more." background="bg-[#EDEBFF]" image="/images/feature4.png" link="/" />
+              <TopRight /> <FeatureCard heading="Cart Templates" description="Customize cart layouts, colors, promotions, product suggestions, trust badges, and more." background="bg-[#EDEBFF]" image="/images/feature4.png" link="/cart-editor"  />
           </div>
 
         </div>
@@ -87,28 +88,28 @@ export default function Home() {
           <div className=" border-b-[1px] md:border-r-[1px] border-gray-200 relative group lg:p-[26px] p-[16px] bg-white  cursor-pointer">
                 <TopLeft />
               <TopRight />
-            <AnimationCard heading="Announcement" description="Boost awareness and engagement by displaying promotional messages inside the cart" image="/images/subfeature1.png" />
+            <AnimationCard heading="Announcement" description="Boost awareness and engagement by displaying promotional messages inside the cart" image="/images/subfeature1.png" link="/cart-editor"/>
           </div>
 
           {/* Card 2 */}
           <div className="border-b-[1px]  lg:border-r-[1px] border-gray-200 relative group lg:p-[26px] p-[16px]  bg-white  cursor-pointer">
               
               <TopRight />
-            <AnimationCard heading="Rewards" description="Show loyalty points and rewards to boost customer retention and repeat sales." image="/images/subfeature2.png" />
+            <AnimationCard heading="Rewards" description="Show loyalty points and rewards to boost customer retention and repeat sales." image="/images/subfeature2.png" link="/cart-editor"/>
           </div>
 
           {/* Card 3 */}
           <div className="border-b-[1px] lg:border-r-0 md:border-r-[1px] border-gray-200 relative group lg:p-[26px] p-[16px]  bg-white  cursor-pointer">
     
               <TopRight />
-            <AnimationCard heading="Upsells" description="Encourage repeat purchases and boost loyalty by showing points or rewards inside the Cart." image="/images/subfeature3.png" />
+            <AnimationCard heading="Upsells" description="Encourage repeat purchases and boost loyalty by showing points or rewards inside the Cart." image="/images/subfeature3.png" link="/cart-editor"/>
           </div>
 
           {/* Card 4 */}
           <div className="  lg:border-r-[1px] border-b-[1px] lg:border-b-0 border-gray-200 relative group lg:p-[26px] p-[16px]  bg-white  cursor-pointer ">
                 <TopLeft />
               <BottomRight />
-            <AnimationCard heading="Coupon Code" description="smoother & faster checkout experience as coupons can be applied through the Cart" image="/images/subfeature4.png" />
+            <AnimationCard heading="Coupon Code" description="smoother & faster checkout experience as coupons can be applied through the Cart" image="/images/subfeature4.png" link="/cart-editor"/>
           </div>
 
           {/* Card 5 */}
@@ -116,14 +117,14 @@ export default function Home() {
                 <TopLeft />
               <TopRight />
               <BottomRight />
-            <AnimationCard heading="Sticky Cart" description="A floating, always-visible cart button that's always just a tap away for your shoppers." image="/images/subfeature5.png" />
+            <AnimationCard heading="Sticky Cart" description="A floating, always-visible cart button that's always just a tap away for your shoppers." image="/images/subfeature5.png" link="/sticky-cart" />
           </div>
 
           {/* Card 6 */}
           <div className="border-r-0  border-gray-200  relative group lg:p-[26px] p-[16px]  bg-white  cursor-pointer">
               <TopRight />
               
-            <AnimationCard heading="Abandoned Cart Emails" description="Convert window shoppers into buyers by Auto-sending tailored emails to recover lost carts." image="/images/subfeature6.png" />
+            <AnimationCard heading="Abandoned Cart Emails" description="Convert window shoppers into buyers by Auto-sending tailored emails to recover lost carts." image="/images/subfeature6.png" link="/abandoned-cart"/>
           </div>
         </div>
 
@@ -174,7 +175,8 @@ export default function Home() {
           <BlogCard />
         </div>
         <div className='w-40 mx-auto lg:pb-7 pb-5'>
-          <HoverButton text="Read More Blogs" width="w-40" border="border-2" link="/" />
+          <HoverButton text="Read More Blogs" width="w-40" border="border-2" link="https://blog.speedcart.app/" />
+         
         </div>
       </ContentWrapper>
       <GrayLine />
