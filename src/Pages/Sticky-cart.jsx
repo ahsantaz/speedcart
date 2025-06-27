@@ -27,7 +27,7 @@ export default function StickyCart() {
 
   return (
     <>
-      <Hero_section image="/images/sticky-banner.svg" description=" Make it easy for shoppers to access their cart instantly from any page with a floating, customizable button." part1="Experience" part2="The Power of" part3="Floating" part4="Cart Button" part5="" />
+      <Hero_section image="/images/sticky-banner.png" description=" Make it easy for shoppers to access their cart instantly from any page with a floating, customizable button." part1="Experience" part2="The Power of" part3="Floating" part4="Cart Button" part5="" />
 
       <ContentWrapper>
         <div className='py-4'></div>

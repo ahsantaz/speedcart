@@ -97,7 +97,7 @@ export default function CartEditor() {
 
   return (
     <>
-      <Hero_section image="/images/feature-banner.svg" description=" Easily edit, rearrange, or remove cart items to match your brand & boost sales" part1="Customize" part2="Every Part of" part3="Your Cart" part4="Seamlessly" part5="" />
+      <Hero_section image="/images/cart-banner.png" description=" Easily edit, rearrange, or remove cart items to match your brand & boost sales" part1="Customize" part2="Every Part of" part3="Your Cart" part4="Seamlessly" part5="" />
 
       <ContentWrapper>
         <div className='py-4'></div>

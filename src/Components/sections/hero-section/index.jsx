@@ -57,7 +57,7 @@ export default function Hero_section({ part1, part2, part3, part4, part5, descri
             </div>
 
             <div className="max-w-[1024px]  mx-auto mt-6 md:mt-10">
-              <img src={image} alt="home banner" />
+              <img src={image} alt=" banner" />
             </div>
           </div>
         </div>

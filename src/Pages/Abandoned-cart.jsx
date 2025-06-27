@@ -56,7 +56,7 @@ export default function AbandonedCart() {
 
   return (
     <>
-      <Hero_section image="/images/abandoned-banner.svg" description=" Implement Automation to rearrange shoppers who leave items in their cart with timed, personalized recovery emails" part1="Recover" part2="Lost Sales Using " part3="" part4=" Abandoned Cart" part5="Emails" />
+      <Hero_section image="/images/abundoned-banner.png" description=" Implement Automation to rearrange shoppers who leave items in their cart with timed, personalized recovery emails" part1="Recover" part2="Lost Sales Using " part3="" part4=" Abandoned Cart" part5="Emails" />
 
       <ContentWrapper>
         <div className='py-4'></div>

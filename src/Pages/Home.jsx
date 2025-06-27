@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
 
-      <Hero_section image="/images/home-banner.svg" description=" Convert and recover your sales with Speed Cart's advanced cart tools, upsells, sticky carts, and recovery emails." part1="Upgrade" part2="Your Cart" part3="Boost" part4="Sales" part5="Today" />
+      <Hero_section image="/images/home-banner.png" description=" Convert and recover your sales with Speed Cart's advanced cart tools, upsells, sticky carts, and recovery emails." part1="Upgrade" part2="Your Cart" part3="Boost" part4="Sales" part5="Today" />
 
       <ContentWrapper>
    
