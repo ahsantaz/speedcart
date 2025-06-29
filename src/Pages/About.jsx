@@ -72,7 +72,7 @@ export default function About() {
            <TopLeft />
                 <TopRight />
           <div className='lg:p-[26px] p-[16px] lg:col-span-5 col-span-1 lg:border-r-[1px] lg:border-b-0 border-b-[1px] border-gray-200 flex justify-center items-center'>
-            <img className='rounded-xl w-full' src="/images/intro-video.svg" alt="" />
+            <img className='rounded-xl w-full' src="/images/about-banner.png" alt="" />
           </div>
 
           {/* Right Column */}
