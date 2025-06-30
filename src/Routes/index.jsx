@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Router } from 'react-router'
+import { Routes, Route, Router } from 'react-router-dom'
 import Home from '../Pages/Home'
 
 import CartEditor from '../Pages/Cart-editor'
