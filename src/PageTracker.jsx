@@ -8,8 +8,7 @@ const pageData = {
   "/abandoned-cart": { event: "abandonedCartPageView", pageTitle: "Abandoned Cart Page" },
   "/cart-templates": { event: "cartTemplatesPageView", pageTitle: "Cart Templates Page" },
   "/about": { event: "aboutPageView", pageTitle: "About Page" },
-  "/contact": { event: "contactPageView", pageTitle: "Contact Page" },
-  "/blog": { event: "blogPageView", pageTitle: "Blog Page" }
+  "/contact": { event: "contactPageView", pageTitle: "Contact Page" }
 };
 
 export default function PageTracker() {
